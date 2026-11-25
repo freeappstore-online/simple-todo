@@ -95,7 +95,7 @@ export function TodoItem({ todo, onToggle, onDelete, onEdit }: TodoItemProps) {
       {!editing && (
         <button
           onClick={() => onDelete(todo.id)}
-          className="shrink-0 w-7 h-7 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity cursor-pointer"
+          className="shrink-0 w-7 h-7 flex items-center justify-center opacity-0 group-hover:opacity-100 focus-visible:opacity-100 pointer-coarse:opacity-100 transition-opacity cursor-pointer"
           style={{
             borderRadius: "0.5rem",
             background: "transparent",
